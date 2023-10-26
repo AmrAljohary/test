@@ -33,7 +33,7 @@
             resultDiv.innerHTML = "Login Successful. Response: " + JSON.stringify(response.data);
 
             // Check if Express session is stored correctly
-            axios.get('/check-session')
+            axios.get('https://arabicedu.onrender.com/')
             .then(function (sessionResponse) {
                 resultDiv.innerHTML += "<br>Session Info: " + JSON.stringify(sessionResponse.data);
             })
